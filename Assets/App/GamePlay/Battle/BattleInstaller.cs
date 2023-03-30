@@ -6,7 +6,6 @@ namespace App.GamePlay.Battle
     {
         public override void InstallBindings()
         {
-            Container.Bind<BattleStartConfiguration>().FromNew().AsSingle().NonLazy();
             InternalBattleInstaller.Install(Container);
         }
     }

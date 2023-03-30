@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e42b60ee3654804b1f4970b71f75d7a, type: 3}
+  m_Name: Card Face Configuration
+  m_EditorClassIdentifier: 
+  m_colorMap:
+    pairs:
+    - key: 0
+      value: {r: 1, g: 1, b: 1, a: 0}
+    - key: 1
+      value: {r: 1, g: 0.495283, b: 0.495283, a: 0}
+    - key: 2
+      value: {r: 0.7013034, g: 1, b: 0.49411762, a: 0}
+    - key: 3
+      value: {r: 0.49411762, g: 0.748637, b: 1, a: 0}
+    - key: 4
+      value: {r: 1, g: 0.98212826, b: 0.49411762, a: 0}
+    error: 0
+  m_faceMap:
+    pairs:
+    - key: 16
+      value: {fileID: 21300000, guid: 20e32ea6c4f49478e836c7c2fc0a032b, type: 3}
+    - key: 0
+      value: {fileID: 21300000, guid: 20e32ea6c4f49478e836c7c2fc0a032b, type: 3}
+    - key: 1
+      value: {fileID: 21300000, guid: cd205d27919fa4039a97b6924768291f, type: 3}
+    - key: 2
+      value: {fileID: 21300000, guid: 08d1c3edc90764724a96b5323a34694a, type: 3}
+    - key: 3
+      value: {fileID: 21300000, guid: 20b16d3d9eb6d46cdb2fbe3bddfb3b39, type: 3}
+    - key: 4
+      value: {fileID: 21300000, guid: 3e35cf6cb952f4eda83fa6fbb6c65ecf, type: 3}
+    - key: 5
+      value: {fileID: 21300000, guid: 02dce4f5a7a1a42e486f63bc436aea89, type: 3}
+    - key: 6
+      value: {fileID: 21300000, guid: 6240267faa2db4e998dc900600ec3555, type: 3}
+    - key: 7
+      value: {fileID: 21300000, guid: cf3e7fb9ae09043a8813927ea6517306, type: 3}
+    - key: 8
+      value: {fileID: 21300000, guid: acd0b9eeaa90b4827b0298d1ba3b8d9d, type: 3}
+    - key: 9
+      value: {fileID: 21300000, guid: a5947207503d9491aa3044695fe379df, type: 3}
+    - key: 10
+      value: {fileID: 21300000, guid: 97726c4a3a8bd4529864441a9bdb6c77, type: 3}
+    - key: 11
+      value: {fileID: 21300000, guid: 93d7dcec1a958454692500a935098c00, type: 3}
+    - key: 12
+      value: {fileID: 21300000, guid: 3a0131f4edefa46728c0de153e993d3f, type: 3}
+    - key: 13
+      value: {fileID: 21300000, guid: 2085b97dfa7b2434487ce7ddb4f11bab, type: 3}
+    - key: 14
+      value: {fileID: 21300000, guid: c2b4cf77b686b44d7b6041dd69dcb902, type: 3}
+    - key: 15
+      value: {fileID: 21300000, guid: 0cadc1e85ef0747c388eeab62c81256a, type: 3}
+    error: 0
+  m_iconMap:
+    pairs:
+    - key: 16
+      value: {fileID: 21300000, guid: 1d58241afb13049bf93ad481a301ef0d, type: 3}
+    - key: 0
+      value: {fileID: 21300000, guid: 1d58241afb13049bf93ad481a301ef0d, type: 3}
+    - key: 1
+      value: {fileID: 21300000, guid: c968f14ff901f4f41b1c600ff1bf4651, type: 3}
+    - key: 2
+      value: {fileID: 21300000, guid: 4c2dd42034c7e49569c7c48415a4389a, type: 3}
+    - key: 3
+      value: {fileID: 21300000, guid: 72a2a9adadee44eb8b2c29abb1a831bb, type: 3}
+    - key: 4
+      value: {fileID: 21300000, guid: 87159363d5c6e4236a5e8135a3238d5e, type: 3}
+    - key: 5
+      value: {fileID: 21300000, guid: 13840cd5e97bf42c89d271d0a28aa292, type: 3}
+    - key: 6
+      value: {fileID: 21300000, guid: 74ce645c9900440d892cf48fcf2aa8f7, type: 3}
+    - key: 7
+      value: {fileID: 21300000, guid: 2ba5c585b2db945c0a86222f069c7920, type: 3}
+    - key: 8
+      value: {fileID: 21300000, guid: 8112a6a18553a4abcb54dd627c2049bd, type: 3}
+    - key: 9
+      value: {fileID: 21300000, guid: eb9de305a06624d2fa24ab8de37a2357, type: 3}
+    - key: 10
+      value: {fileID: 21300000, guid: 7bf016168a11c4fdca391541f49b6eab, type: 3}
+    - key: 11
+      value: {fileID: 21300000, guid: 96886b1a79bf647cfb0eb639d92d5a79, type: 3}
+    - key: 12
+      value: {fileID: 21300000, guid: cc03e3432144e4f698642d9e7fa20784, type: 3}
+    - key: 13
+      value: {fileID: 21300000, guid: f3a99aaaad61a41429eccc3ca087a3e8, type: 3}
+    - key: 14
+      value: {fileID: 21300000, guid: 87907c80b8cae43139d66c96de29fed4, type: 3}
+    - key: 15
+      value: {fileID: 21300000, guid: 02fa248fc794b49b5a80a9a6191a9b46, type: 3}
+    error: 0

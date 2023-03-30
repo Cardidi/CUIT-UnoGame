@@ -20,9 +20,9 @@ namespace App.Toolkit
         /// </summary>
         public T CachedValue { get; private set; }
 
-        public event Action<T> UpdateCallback; 
+        public event Action<T> UpdateCallback;
 
-        // todo: Add cancellation token to avoid multiply call in same frame.
+        private bool modificationCommited = false;
         
         public UpdatableContent(T val = default)
         {
@@ -43,8 +43,14 @@ namespace App.Toolkit
         public async void Update(T content, PlayerLoopTiming playerLoopTiming = PlayerLoopTiming.PreUpdate)
         {
             CachedValue = content;
+            
+            if (modificationCommited) return;
+            modificationCommited = true;
+            
             await UniTask.Yield(playerLoopTiming);
             Value = CachedValue;
+            
+            modificationCommited = false;
             try { UpdateCallback?.Invoke(Value); }
             catch (Exception e) { Debug.LogError(e); }
         }

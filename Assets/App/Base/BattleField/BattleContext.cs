@@ -3,6 +3,7 @@ using System.Linq;
 using App.Base.BattleField.Events;
 using App.Toolkit;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace App.Base.BattleField
 {
@@ -18,6 +19,10 @@ namespace App.Base.BattleField
         public UpdatableContent<AbstractBattleParticipantEntity> CurrentPlayer { get; }
         
         public UpdatableContent<GameCard> CurrentCardRule { get; }
+        
+        public UpdatableContent<bool> StartedFlag { get; }
+        
+        public UpdatableContent<GameCard[]> LastShownCardList { get; }
 
         public BattleContext(IBattleMediator mediator, Func<BattleContext, AbstractBattleParticipantEntity[]> entityCreator)
         {
@@ -31,6 +36,8 @@ namespace App.Base.BattleField
             Paritcipants = entities;
             CurrentCardRule = new UpdatableContent<GameCard>(new GameCard(GameCardColor.ANY, GameCardType.ANY));
             CurrentPlayer = new UpdatableContent<AbstractBattleParticipantEntity>();
+            StartedFlag = new UpdatableContent<bool>(false);
+            LastShownCardList = new UpdatableContent<GameCard[]>(Array.Empty<GameCard>());
         }
         
     }

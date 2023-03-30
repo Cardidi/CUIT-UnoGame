@@ -14,11 +14,14 @@ namespace App.GamePlay.Battle.Events
 
     public class BattleCanceledEvent : BattleEvent
     {
-        public String Reason { get; }
+        public CancelReason Reason { get; }
+        
+        public object Arguments { get; }
 
-        public BattleCanceledEvent(string reason, string battleID) : base(battleID)
+        public BattleCanceledEvent(CancelReason reason, object arguments, string battleID) : base(battleID)
         {
             Reason = reason;
+            Arguments = arguments;
         }
     }
     

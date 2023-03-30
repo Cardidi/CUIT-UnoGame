@@ -1,9 +1,12 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using App.Base.BattleField;
 using App.Base.BattleField.Events;
 using App.Base.User;
+using App.GamePlay.Battle.Events;
 using App.Toolkit;
+using UnityEngine;
 using Zenject;
 
 namespace App.GamePlay.Battle
@@ -39,13 +42,25 @@ namespace App.GamePlay.Battle
         
         public void EventHandler(BattleParticipantEvent evt, BattleContext ctx, SignalBus msgBus)
         {
-            throw new System.NotImplementedException();
+            switch (evt)
+            {
+                case AddCardEvent e:
+                {
+                    RenewCardList(CardList.Value.Count + e.List.Length);
+                } break;
+                case RemoveCardEvent e:
+                {
+                    RenewCardList(CardList.Value.Count - e.List.Length);
+                } break;
+                case RefreshCardEvent e:
+                {
+                    RenewCardList(e.List.Length);
+                } break;
+                
+                default:
+                    Debug.Log(BattleConst.DEBUG_TAG + $"Uncatch event: {evt.GetType()}");
+                    break;
+            }
         }
-
-        #region Events
-
-        
-
-        #endregion
     }
 }
